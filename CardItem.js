@@ -1,7 +1,6 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
 
-// export par défaut
 export default function CardItem({ title, description, image }) {
   return (
     <View style={styles.card}>
@@ -21,11 +20,7 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     overflow: 'hidden',
     marginBottom: 16,
-    elevation: 3, // ombre Android
-    shadowColor: '#000', // ombre iOS
-    shadowOpacity: 0.2,
-    shadowOffset: { width: 0, height: 2 },
-    shadowRadius: 4,
+    elevation: 3,
   },
   cover: { width: '100%', height: 150 },
   body: { padding: 12 },
